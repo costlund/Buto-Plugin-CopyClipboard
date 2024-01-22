@@ -1,0 +1,32 @@
+readme:
+  name: Buto-Plugin-CopyClipboard
+  description: Copy content from an element with Javascript. 
+  item:
+    -
+      name: Usage
+      item:
+        -
+          name: Include
+          description: |
+            ````
+            type: widget
+            data:
+              plugin: copy/clipboard
+              method: include
+            ````
+
+        -
+          name: Button
+          description: |
+            ````
+            type: widget
+            data:
+              plugin: copy/clipboard
+              method: button
+              data:
+                id:  _id_of_element_
+                text: Copy content
+            ````
+    -
+      name: Source
+      description: 'https://clipboardjs.com'

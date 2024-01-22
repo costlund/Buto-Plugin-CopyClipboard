@@ -1,0 +1,10 @@
+-
+  type: widget
+  data:
+    plugin: 'include/js'
+    method: include
+    data:
+      src: '/plugin/copy/clipboard/dist/clipboard.min.js'
+-
+  type: script
+  innerHTML: $( document ).ready(function() {  new ClipboardJS('.btn');  });
