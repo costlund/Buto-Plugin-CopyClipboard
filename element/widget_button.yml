@@ -1,6 +1,6 @@
 -
   type: a
   attribute: 
-    class: btn btn-primary btn-sm
+    class: btn_clipboard
     data-clipboard-target: rs:id
   innerHTML: rs:text

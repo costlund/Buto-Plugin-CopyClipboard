@@ -7,4 +7,18 @@
       src: '/plugin/copy/clipboard/dist/clipboard.min.js'
 -
   type: script
-  innerHTML: $( document ).ready(function() {  new ClipboardJS('.btn');  });
+  innerHTML: |
+    $( document ).ready(function() { 
+      var clipboard     = new ClipboardJS('.btn');
+      var btn_clipboard = new ClipboardJS('.btn_clipboard');
+      btn_clipboard.on('success', function(e) {
+          if(e.action=='copy'){
+            console.log('PluginCopyClipboard says - Copied to clipboard: '+e.text);
+          }
+          e.clearSelection();
+      });
+      btn_clipboard.on('error', function(e) {
+          console.error('Action:', e.action);
+          console.error('Trigger:', e.trigger);
+      });
+    });
