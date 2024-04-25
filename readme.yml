@@ -27,6 +27,9 @@ readme:
                 id:  _id_of_element_
                 text: Copy content
             ````
+            ````
+                onclick: console.log('optional onclick...')
+            ````
     -
       name: Source
       description: 'https://clipboardjs.com'

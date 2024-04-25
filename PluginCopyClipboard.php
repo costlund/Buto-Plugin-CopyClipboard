@@ -7,7 +7,7 @@ class PluginCopyClipboard{
     $data = new PluginWfArray($data);
     $data->set('data/id', '#'.$data->get('data/id'));
     $element = wfDocument::getElementFromFolder(__DIR__, __FUNCTION__);
-    $element->setByTag($data->get('data'));
+    $element->setByTag($data->get('data'), 'rs', true);
     wfDocument::renderElement($element);
   }
 }

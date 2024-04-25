@@ -3,4 +3,5 @@
   attribute: 
     class: btn_clipboard
     data-clipboard-target: rs:id
+    onclick: rs:onclick
   innerHTML: rs:text
