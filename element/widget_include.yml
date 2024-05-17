@@ -14,6 +14,7 @@
       btn_clipboard.on('success', function(e) {
           if(e.action=='copy'){
             console.log('PluginCopyClipboard says - Copied to clipboard: '+e.text);
+            alert(e.text)
           }
           e.clearSelection();
       });

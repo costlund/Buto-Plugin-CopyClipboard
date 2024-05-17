@@ -1,5 +1,9 @@
-version: 1.2.0
+version: 1.3.0
 history:
+  1.3.0:
+    date: '2024-05-17'
+    title: 'Button'
+    description: 'Show alert with copied text.'
   1.2.0:
     date: '2024-04-25'
     title: 'Button'
