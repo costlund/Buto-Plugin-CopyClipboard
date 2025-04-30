@@ -28,6 +28,7 @@ data:
   data:
     id:  _id_of_element_
     text: Copy content</code></pre>
+<pre><code>    onclick: console.log('optional onclick...')</code></pre>
 
 <a name="key_1"></a>
 
